@@ -1,0 +1,36 @@
+// --------------------------------------------------------------------------------
+// VIEWS - CAMPAIGN TWEETS ENGAGEMENT
+// --------------------------------------------------------------------------------
+.v-campaign-tweets-engagement {
+
+	.legend-con {
+		@include cf();
+
+		margin-bottom: $l-spacing-medium;
+
+		.title {
+			@include col(6/12);
+
+			color: $color-primary;
+			font-size: $font-size-16px;
+			font-weight: $font-weight-semi-bold;
+		}
+
+		.legend {
+			@include col(6/12);
+
+			padding-right: 40px;
+
+			.color-series-1 {
+				background: #26558c;
+			}
+		}
+	}
+
+	.barchart-con {
+		img {
+			width: 100%;
+		}
+	}
+
+}

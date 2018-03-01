@@ -1,0 +1,19 @@
+// --------------------------------------------------------------------------------
+// TEMPLATE - MAIN
+// --------------------------------------------------------------------------------
+.t-main {
+    bottom: 0;
+    display: none;
+    left: $l-side-panel-width;
+    overflow-y: auto;
+    position: absolute;
+    right: 0;
+    top: $l-header-height;
+    z-index: 3;
+}
+
+.t-main-con {
+    background: $color-gray-gallery;
+    min-width: $l-body-min-width - $l-side-panel-width - $l-spacing-medium;
+    padding: $l-spacing-medium;
+}

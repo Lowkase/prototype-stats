@@ -1,0 +1,19 @@
+// --------------------------------------------------------------------------------
+// TEMPLATE - HEADER
+// --------------------------------------------------------------------------------
+.t-header {
+    background: $color-primary;
+    color: $color-white;
+    height: $l-header-height;
+    left: 0;
+    line-height: $l-header-height;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.t-header-con {
+    min-width: $l-body-min-width;
+    padding: 0 $l-spacing-medium;
+}

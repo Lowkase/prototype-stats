@@ -1,0 +1,40 @@
+// --------------------------------------------------------------------------------
+// VIEWS - CAMPAIGN AUDIENCE METRICS
+// --------------------------------------------------------------------------------
+.v-campaign-audience-metrics {
+	header {
+		.audience {
+			color: $color-gray-gray;
+			margin-left: $l-spacing-small;
+		}
+	}
+
+	article {
+		@include cf();
+
+		> div {
+			@include col(2/12, $gutter:1);
+			@include border-radius-all(7px);
+
+			background: $color-gray-gallery;
+			border:1px solid $color-gray-celeste;
+			height: 96px;
+		 	@media (max-width:1279px) {
+				height: 111px;
+		    }
+			padding: $l-spacing-large;
+			text-align: center;
+		}
+
+		.stat {
+			color: $color-primary;
+			font-size: $font-size-33px;
+			font-weight: $font-weight-semi-bold;
+		}
+
+		.stat-description {
+			font-size: $font-size-16px;
+			font-weight: $font-weight-semi-bold;
+		}
+	}
+}

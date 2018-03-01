@@ -1,0 +1,25 @@
+// --------------------------------------------------------------------------------
+// VIEWS - AUDIENCE SELECTOR
+// --------------------------------------------------------------------------------
+.v-audience-selector {
+	.header {
+		font-size: $font-size-12px;
+		margin-bottom: $l-spacing-xsmall;
+	}
+
+	.actions {
+		@include cf();		
+	}
+
+	.selector {
+		@include col(6/12);
+	}
+
+	.new-audience {
+		@include col(6/12);
+
+		.m-button {
+			float: right;
+		}
+	}
+}

@@ -1,0 +1,32 @@
+// --------------------------------------------------------------------------------
+// VIEWS -CAMPAIGN ENGAGEMENT BREAKDOWN
+// --------------------------------------------------------------------------------
+.v-campaign-engagement-breakdown {
+
+	.legend-con {
+		@include cf();
+
+		margin-bottom: $l-spacing-medium;
+
+		.legend {
+			padding-right: 40px;
+
+			.color-series-1 {
+				background: #8ca6c4;
+			}
+			.color-series-2 {
+				background: #5275a4;
+			}
+			.color-series-3 {
+				background: #31528e;
+			}
+		}
+	}
+
+	.barchart-con {
+		img {
+			width: 100%;
+		}
+	}
+
+}

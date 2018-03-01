@@ -1,0 +1,26 @@
+// --------------------------------------------------------------------------------
+// MODULES - LEGEND ITEM
+// --------------------------------------------------------------------------------
+.m-legend-item {
+	@include cf();
+
+	float: right;
+	margin-left: $l-spacing-large;
+
+	div:first-child {
+		@include border-radius-all(50%);
+
+		background: gray;
+		float: left;
+		height: $l-spacing-medium;
+		margin-right: $l-spacing-xsmall;
+		margin-top: 2px;
+		width: $l-spacing-medium;
+
+	}
+
+	div:last-child {
+		float: left;
+		font-weight: $font-weight-semi-bold;
+	}				
+}

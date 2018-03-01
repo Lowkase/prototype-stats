@@ -1,0 +1,44 @@
+// --------------------------------------------------------------------------------
+// MODULES - TWITTER CARD RECENT
+// --------------------------------------------------------------------------------
+.m-twitter-card-recent {
+	@include cf();
+
+	background: $color-white;
+
+	.avatar {
+		float: left;
+
+		img {
+			width: 50px;
+			@include border-radius-all(50%);
+		}
+	}
+
+	.info {
+		color: $color-black;
+		font-size: $font-size-10px;
+		overflow: hidden;
+		padding: 0 $l-spacing-small;
+
+		.name {
+			@include text-truncate();
+			font-weight: $font-weight-bold;
+			margin-bottom: $l-spacing-xsmall;
+		}
+
+		.handle {
+			@include text-truncate();
+			color: $color-primary;
+			margin-bottom: $l-spacing-xsmall;
+		}
+
+		.text {
+			margin-bottom: $l-spacing-xsmall;
+		}
+
+		.followers {
+			color: $color-gray-masala;		
+		}
+	}
+}

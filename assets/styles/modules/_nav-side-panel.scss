@@ -1,0 +1,40 @@
+// --------------------------------------------------------------------------------
+// MODULES - NAV-SIDE-PANEL
+// --------------------------------------------------------------------------------
+.m-nav-side-panel {
+
+    // Defaults
+    // ----------------------------------------
+    // - $list-style (none)
+    // - $li-margin-bottom (25px)
+
+    // Sample default override
+    //@include nav-side-panel($li-margin-bottom: 50px);
+
+    @include nav-side-panel();
+
+    display: none;
+
+    ul {
+        overflow: hidden;
+        overflow-y: auto;
+
+        &.bottom-actions {
+            bottom: 0;
+            position: absolute;
+        }
+    }
+
+    li {
+        svg {
+            cursor: pointer;
+            fill: $color-gray-masala;
+            width: 32px;
+        }
+
+        svg:hover {
+            fill: $color-primary;
+        }
+    }
+
+}

@@ -1,0 +1,66 @@
+// --------------------------------------------------------------------------------
+// MODULES - CATEGORIES
+// --------------------------------------------------------------------------------
+.m-categories {
+	@include border-radius-all(7px);
+
+	background: $color-gray-gallery;
+	border: 2px solid $color-gray-gray-nurse;
+	padding: $l-spacing-small;
+
+	header {
+		@include cf();
+
+		.title {
+			@include span(.6);
+			@include text-truncate();
+		}
+
+		.actions {
+			@include span(.4);
+
+			svg {
+				cursor: pointer;
+				float: right;
+				margin-left: $l-spacing-xsmall;
+				width: 18px;
+			}
+
+			svg:first-child {
+				fill: $color-gray-nobel;
+			}
+			
+			svg:last-child {
+				fill: $color-primary;
+			}
+		}
+	}
+
+	li {
+		@include cf();
+		@include border-radius-all(10px);
+
+		cursor: pointer;
+		font-size: $font-size-18px;
+		font-weight: $font-weight-regular;
+		padding: $l-spacing-small;
+		margin-bottom: $l-spacing-small;
+
+		> div.col1 {
+			@include col(8/12);
+			@include text-truncate();
+		}
+
+		> div.col2 {
+			@include col(4/12);
+			text-align: right;
+		}
+	}
+	li.active, li:hover {
+		background: $color-primary;
+		color: $color-white;
+	}
+	li:last-child {
+		margin-bottom: 0;
+	}
+}

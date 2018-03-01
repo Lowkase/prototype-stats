@@ -1,0 +1,20 @@
+// --------------------------------------------------------------------------------
+// VIEWS - CAMPAIGN SELECTOR
+// --------------------------------------------------------------------------------
+.v-campaign-selector {
+	@include cf();
+
+	> div {
+		float: left;
+		margin-right: $l-spacing-large;
+	}
+
+	.header {
+		font-size: $font-size-12px;
+		margin-bottom: $l-spacing-xsmall;
+	}
+
+	.m-dropdown {
+		width: 340px;
+	}
+}

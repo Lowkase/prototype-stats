@@ -1,0 +1,18 @@
+// --------------------------------------------------------------------------------
+// TEMPLATE - SIDE-PANEL
+// --------------------------------------------------------------------------------
+.t-side-panel {
+    background: $color-gray-celeste;
+    bottom: 0;
+    color: $color-gray-masala;
+    left:0;
+    position: absolute;
+    top: $l-spacing-medium;
+    width: $l-side-panel-width;
+    z-index: 3;
+}
+
+.t-side-panel-con {
+    padding: $l-spacing-medium;
+    padding-top: $l-header-height + $l-spacing-medium;
+}

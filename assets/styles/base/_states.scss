@@ -1,0 +1,23 @@
+// --------------------------------------------------------------------------------
+// BASE - STATES
+//---------------------------------------------------------------------------------
+.s-show {
+   display: block !important;
+}
+
+.s-hide {
+    display: none !important;
+}
+
+//  TODO: to review
+.s-fade {
+    @include transition(opacity);
+
+    &.s-out {
+        opacity: 0;
+    }
+
+    &.s-in {
+        opacity: 1;
+    }
+}

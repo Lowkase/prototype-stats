@@ -1,0 +1,106 @@
+// --------------------------------------------------------------------------------
+// VIEWS - AUDIENCE OVERVIEW
+// --------------------------------------------------------------------------------
+.v-audience-overview {
+	article {
+		@include cf();
+	}
+
+	.avatar-overview {
+		@include col(.54);
+
+		.row {
+			@include cf();
+		}
+	}
+
+	.avatar {
+		@include col(.40);
+		
+		text-align: center;
+
+		img {
+			@include border-radius-all(50%);
+
+			border:1px solid $color-gray-gray-nurse;
+			display: inline-block;
+		}
+		.audience-count {
+			color: $color-primary;
+			font-size: $font-size-35px;
+			font-weight: $font-weight-bold;
+			margin-top: $l-spacing-small;
+		}
+		.audience {
+			font-size: $font-size-18px;
+			font-weight: $font-weight-semi-bold;
+		}
+	}
+
+	.overview {
+		@include col(.60);
+
+		margin-top: 12px;
+
+		.posts-stats {
+			@include cf();
+		}
+
+		.total, .per-hour {
+			@include col(6/12);
+
+			text-align: center;
+		}
+
+		.value {
+			color: $color-primary;
+			font-size: $font-size-33px;
+			font-weight: $font-weight-semi-bold;
+		}
+
+		.label {
+			font-size: $font-size-18px;
+			font-weight: $font-weight-semi-bold;
+		}
+	}
+
+	.stats {
+		@include col(.45);
+
+		color: $color-primary;
+
+		.audience-stats {
+			@include border-radius-all(7px);
+
+			background: $color-blue-aqua-haze;
+			border:1px solid $color-blue-rock-blue;
+			padding: $l-spacing-large;
+		}
+
+		li {
+			@include cf();
+
+			margin-bottom:$l-spacing-xlarge;
+		}
+		li:last-child {
+			margin-bottom:0;
+		}
+
+		.stat-icon {
+			float: left;
+			font-size: $font-size-32px;
+		}
+
+		.stat-text {
+			overflow: hidden;
+			
+			.label {
+				font-size: $font-size-18px;
+			}
+			.value {
+				font-size: $font-size-25px;
+				font-weight: $font-weight-semi-bold;
+			}
+		}
+	}
+}

@@ -1,0 +1,65 @@
+// --------------------------------------------------------------------------------
+// MODULES - NAV-COLLAPSE
+// --------------------------------------------------------------------------------
+$m-nav-collapse-arrow-height: 15px;
+$m-nav-collapse-button-line-height: 40px;
+
+.m-nav-collapse {
+    position: relative;
+
+    .collapse-icon,
+    .collapse-arrow {
+        display: none;
+    }
+
+    .collapse-arrow {
+        height: $m-nav-collapse-arrow-height;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        top: -$m-nav-collapse-arrow-height;
+        width: $m-nav-collapse-arrow-height * 2;
+        z-index: 2;
+
+        &:before {
+            background: white;
+            bottom: -5px;
+            border: 1px solid $l-border-color;
+            content: " ";
+            height: 10px;
+            position: absolute;
+            right: $m-nav-collapse-arrow-height;
+            transform: rotate(45deg);
+            width: 10px;
+        }
+    }
+
+    @media #{$breakpoint-tablet-portrait-max} {
+
+        .collapse-icon {
+            display: block;
+        }
+
+        .collapse-list {
+            background-color: white;
+            border: 1px solid $l-border-color;
+            border-radius: $l-border-radius;
+            display: none;
+            position: absolute;
+            right: 0;
+            top: $m-nav-collapse-button-line-height + $m-nav-collapse-arrow-height;
+            z-index: 1;
+
+            button.m-button {
+                color: $color-gray-masala !important;
+            }
+        }
+
+        &.s-open {
+            .collapse-arrow,
+            .collapse-list {
+                display: block;
+            }
+        }
+    }
+}

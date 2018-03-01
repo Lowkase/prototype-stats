@@ -1,0 +1,64 @@
+// --------------------------------------------------------------------------------
+// MODULES - TWITTER CARD
+// --------------------------------------------------------------------------------
+.m-twitter-card {
+	@include col(3/12, $cycle:4, $gutter:1);
+	@media (max-width:1279px) {
+		@include col(4/12, $cycle:3, $gutter:1, $uncycle:1);
+	}
+
+	@include border-radius-all(7px);
+	@include cf();
+
+	background: $color-white;
+	border: 1px solid $color-gray-gray-nurse;
+	box-shadow: $l-box-shadow;
+	padding: $l-spacing-xsmall;
+	margin-bottom: $l-spacing-small;
+
+	.avatar {
+		float: left;
+
+		img {
+			width: 50px;
+			@include border-radius-all(50%);
+		}
+	}
+
+	.info {
+		overflow: hidden;
+		padding-left: $l-spacing-small;
+
+		.handle {
+			@include text-truncate();
+			color: $color-primary;
+			font-size: $font-size-10px;
+			margin-bottom: $l-spacing-xsmall;
+		}
+
+		.name {
+			@include text-truncate();
+			font-size: $font-size-12px;
+			font-weight: $font-weight-bold;
+			margin-bottom: $l-spacing-xsmall;
+		}
+
+		.twitter-stats {
+			@include cf();
+
+			font-size: $font-size-10px;
+
+			i {
+				color: $color-gray-concord;
+			}
+
+			.followers {
+				@include col(6/12);
+			}
+
+			.retweets {
+				@include col(6/12);
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+// --------------------------------------------------------------------------------
+// VIEW - AUDIENCE DEMOGRAPHICS
+// --------------------------------------------------------------------------------
+.v-audience-demographics {
+	article {
+		@include cf();
+
+		> div {
+			@include span(3/12);
+			@media (max-width:1279px) {
+				@include col(6/12, $cycle:2);
+				margin-bottom: $l-spacing-large;
+			}
+		}
+	}
+
+	.chart-double-pie {
+		position: relative;
+		border: 1px solid #e8e8e8;
+	}
+
+	.graph-title {
+		font-size: $font-size-8px;
+		font-weight: bold;
+		left: 0;
+		position: absolute;
+		text-align: center;
+		text-transform: uppercase;
+		top: 48%;
+		width:100%;
+
+		@media (max-width:1279px) {
+			font-size: $font-size-14px;
+		}
+
+		@media (min-width:1299px) {
+			font-size: $font-size-10px;
+		}
+
+		@media (min-width:1399px) {
+			font-size: $font-size-12px;
+		}	
+	}
+
+}

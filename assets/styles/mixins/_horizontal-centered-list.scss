@@ -1,0 +1,22 @@
+// --------------------------------------------------------------------------------
+// MIXINS - HORIZONTAL-CENTERED-LIST
+//---------------------------------------------------------------------------------
+@mixin horizontal-centered-list() {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+
+    > li{
+    	cursor: pointer;
+        display: inline-block;
+        *display: inline; /*IE7*/
+        margin-right: 20px;
+        *zoom: 1; /*IE7*/
+        
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+// --------------------------------------------------------------------------------
+// MODULES - HEADER - NETBASE
+// --------------------------------------------------------------------------------
+.m-header-netbase {
+    @include cf();
+
+    .logo {
+    	@include col(1/12);
+    	@include cf();
+
+        img {
+            cursor: pointer;
+            display: block;
+            margin-top: $l-spacing-medium;
+        }
+    }
+
+    .nav {
+    	@include col(8/12);
+
+    	ul {
+    		@include horizontal-centered-list();
+
+            li {
+                @include border-radius(5px, top-left);
+                @include border-radius(5px, top-right);
+
+                background: $color-primary;
+                color: $color-white;
+                font-size: $font-size-21px;
+                font-weight: $font-weight-bold;
+                height: 50px;
+                line-height: 40px;
+                padding: $l-spacing-xsmall $l-spacing-medium 0 $l-spacing-medium;
+                margin-top: $l-spacing-small;
+            }
+
+    		li.active, li:hover {
+                background: $color-gray-gallery;
+                color: $color-primary;
+    		}
+    	}
+
+    }
+
+    .actions {
+    	@include col(3/12);
+    	@include cf();
+
+    	.agency {
+    		float: right;
+            font-size: $font-size-18px;
+            font-weight: $font-weight-bold;
+    		margin-right: $l-spacing-large;
+    	}
+    	i {
+    		cursor: pointer;
+    		line-height: $l-header-height;
+    		float: right;
+            font-size: $font-size-32px;
+    	}
+    }
+}

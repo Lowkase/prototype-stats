@@ -1,0 +1,15 @@
+// --------------------------------------------------------------------------------
+// MIXINS - NAV-SIDE-PANEL
+//---------------------------------------------------------------------------------
+@mixin nav-side-panel($list-style: none, $li-margin-bottom: 25px) {
+
+    ul, li {
+    	list-style: $list-style;
+        margin: 0;
+    }
+
+    li {
+        margin-bottom: $li-margin-bottom;
+    }	
+
+}

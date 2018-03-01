@@ -1,0 +1,9 @@
+// --------------------------------------------------------------------------------
+// MIXINS - BORDER-RADIUS-ALL
+// --------------------------------------------------------------------------------
+@mixin border-radius-all($radius) {
+	@include border-radius($radius, top-left);
+	@include border-radius($radius, top-right);
+	@include border-radius($radius, bottom-right);
+	@include border-radius($radius, bottom-left);
+}

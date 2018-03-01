@@ -1,0 +1,39 @@
+// --------------------------------------------------------------------------------
+// MODULES - EMERGING NOW RECENT TWEETS
+// --------------------------------------------------------------------------------
+.m-emerging-now-recent-tweets{
+	@include cf();
+
+	margin-top: $l-spacing-large;
+
+	.title{
+		color: $color-primary;
+		font-weight: $font-weight-bold;
+		margin-bottom: $l-spacing-medium; 			
+	}
+
+	.emerging-now {
+		@include col(4/12);
+	}
+
+	.recent-tweets {
+		@include col(8/12);
+
+		.tweets {
+			@include cf();
+			@include border-radius-all(7px);
+
+			border:1px solid $color-primary;
+			padding: $l-spacing-small;
+
+			.m-twitter-card-recent {
+				@include col(6/12);
+				border-right: 1px solid $color-primary;
+			}
+
+			.m-twitter-card-recent:last-child {
+				border: 0;
+			}
+		}
+	}
+}

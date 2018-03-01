@@ -1,0 +1,37 @@
+// --------------------------------------------------------------------------------
+// MODULES - PANEL
+// --------------------------------------------------------------------------------
+.m-panel {
+	margin-bottom: $l-spacing-xlarge;
+
+	header {
+		@include cf();
+	}
+	
+	header .title {
+		@include cf();
+
+		color: $color-primary;
+		font-weight: $font-weight-bold;
+		margin-bottom: $l-spacing-medium; 
+
+		i {
+			float: left;
+			font-size: $font-size-14px;
+			margin:7px 7px 0 0;
+		}
+		span {
+			float: left;
+			font-size: $font-size-25px;
+		}
+	}
+
+	article {
+	}
+}
+
+.m-panel-white {
+	background: $color-white;
+	box-shadow: $l-box-shadow;
+	padding: $l-spacing-large;
+}

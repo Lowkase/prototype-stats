@@ -1,0 +1,133 @@
+// --------------------------------------------------------------------------------
+// VIEWS - AUDIENCE INSIGHTS TRENDS
+// --------------------------------------------------------------------------------
+.v-audience-insights-trends {
+	> header .title {
+		@include col(8/12);
+	}
+	> header .filter {
+		@include col(4/12);
+		.m-select{
+			float: right;
+		}
+	}
+
+	> article {
+		@include cf();
+
+		.categories {
+			@include col(.2);
+		}
+
+		.content {
+			@include col(.8);
+
+			> section {
+				@include cf();
+			}
+
+			> section header {
+				@include cf();
+				.title {
+					float: left;
+					font-size: $font-size-16px;
+					line-height: 30px;
+					margin: 0 $l-spacing-medium $l-spacing-small 0;
+				}
+				.filter {
+					float: left;
+				}
+			}
+		}
+	}
+
+	.overview {
+		margin-bottom: $l-spacing-large;
+
+		.image {
+			float: left;
+
+			img {
+				width: 175px;
+				@include border-radius-all(50%);
+			}
+		}
+
+		.text-stats {
+			overflow: hidden;
+			padding-left: $l-spacing-small;
+
+			p {
+				margin: 0;
+			}
+
+			.text-highlight {
+				color: $color-gray-gray;
+				font-size: $font-size-18px;
+				font-weight: $font-weight-semi-bold;
+				margin: $l-spacing-small 0;
+			}
+
+			.stats {
+				@include cf();
+
+				> div {
+					@include col(.24);
+					text-align: center;
+				}
+
+				> div:first-child, > div:last-child {
+					@include col(.14);
+				}
+
+				.count {
+					color: $color-primary;
+					font-size: $font-size-33px;
+					font-weight: $font-weight-semi-bold;
+				}
+
+				.measure {
+					color: $color-gray-masala;
+					font-size: $font-size-18px;
+					font-weight: $font-weight-semi-bold;
+				}
+
+				.multiplier {
+					color: $color-gray-concord;
+					font-size: $font-size-22px;
+				}
+			}
+		}
+	}
+
+	.influencers {
+		margin-top: $l-spacing-xlarge;
+		margin-bottom: $l-spacing-xlarge;
+	}
+
+	.posts-over-time {
+		margin: $l-spacing-large 0;
+
+		.legend-con {
+			@include cf();
+
+			margin-bottom: $l-spacing-medium;
+
+			.legend {
+				padding-right: 40px;
+
+				.color-series-1 {
+					background: $color-blue-han-blue;
+				}
+				.color-series-2 {
+					background: $color-blue-rock-blue;
+				}
+			}
+		}
+
+		.chart_PostsOverTime {
+		}
+
+	}
+
+}
